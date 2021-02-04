@@ -75,17 +75,18 @@
         <form action="">
           <div class="form-group">
             <label for="">Nhập số thứ nhất</label>
-            <input type="text" name="" id="soThu1" class="form-control">
+            <input type="text" name="" id="soThu4" class="form-control">
           </div>
           <div class="form-group">
             <label for="">Nhập số thứ hai</label>
-            <input type="text" name="" id="soThu2" class="form-control">
+            <input type="text" name="" id="soThu5" class="form-control">
           </div>
           <div class="form-group">
             <label for="">Nhập số thứ ba</label>
-            <input type="text" name="" id="soThu3" class="form-control">
+            <input type="text" name="" id="soThu6" class="form-control">
           </div>
-          <button id="tinhSoChanLe" class="btn btn-success" type="submit">Tính</button>
+          <button class="btn btn-success" type="submit" onclick="tinh(event)">Tính</button>
+          <button class="btn btn-warning" type="reset">Reset</button>
         </form>
       </div>
       <div id="thongBaoSoChanLe" class="card-footer text-muted">
@@ -164,11 +165,11 @@
         <form action="">
           <div class="form-group">
             <label for="">Nhập tháng</label>
-            <input type="text" name="" id="soThang" class="form-control">
+            <input type="number" name="" id="soThang" class="form-control">
           </div>
           <div class="form-group">
             <label for="">Nhập năm</label>
-            <input type="text" name="" id="soNam" class="form-control">
+            <input type="number" name="" id="soNam" class="form-control">
           </div>
           <button id="btnDem" class="btn btn-success" type="submit">Đếm</button>
           <button id="btnClear" class="btn btn-info" type="reset"> Xóa điều kiện</button>

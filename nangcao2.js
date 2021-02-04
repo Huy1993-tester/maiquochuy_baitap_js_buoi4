@@ -8,10 +8,11 @@
  */
 
 
-var thangM = 0; 
+var thangM = 0;
 var namY = 0;
 var tongSoNgay = 0;
 var namNhuan = 0;
+var namKhongNhuan = 0;
 var soDu = 0;
 
 var nutDem = document.getElementById("btnDem");
@@ -19,12 +20,15 @@ nutDem.onclick = function (event) {
     event.preventDefault();
     thangM = parseInt(document.getElementById("soThang").value);
     namY = parseInt(document.getElementById("soNam").value);
-    if (1 <= thangM <= 12) {
+    if (1 <= thangM && thangM <= 12) {
         thangT = thangM;
-    } else { console.log("Lỗi") };
 
-    soDu = namY % 19;
-    parseInt (soDu);
+    } else {
+        document.getElementById("thongBaoTongNgay").innerHTML = "Vui lòng nhập từ tháng 1 đến tháng 12"
+    };
+
+
+    soDu = parseInt(namY % 19);
     if (soDu == 3 || soDu == 6 || soDu == 9 || soDu == 11 || soDu == 14 || soDu == 17) {
         namNhuan = namY;
     }
@@ -37,7 +41,9 @@ nutDem.onclick = function (event) {
             if (namNhuan) {
                 tongSoNgay = 29;
             }
-            else { tongSoNgay = 28 }
+            else  {
+                tongSoNgay = 28;
+            }
             break;
         case 4: case 6: case 9: case 11:
             tongSoNgay = 30;

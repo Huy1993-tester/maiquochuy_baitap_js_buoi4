@@ -11,22 +11,22 @@
  * Xuất kq
  */
 
-var numA = -5;
-var numB = -2;
-var numC = 0;
+
 var kqSC = 0;
 var kqSL = 0;
+var numA;
+var numB;
+var numC;
 
-
-var btnTinhChanLe = document.getElementById("tinhSoChanLe");
-btnTinhChanLe.onclick = function (event) {
+function tinh(event) {
   event.preventDefault();
-  numA = parseInt(document.getElementById("soThu1").value);
-  numB = parseInt(document.getElementById("soThu2").value);
-  numC = parseInt(document.getElementById("soThu3").value);
+  numA = document.getElementById("soThu4").value;
+  numB = document.getElementById("soThu5").value;
+  numC = document.getElementById("soThu6").value;
+
   if ((numA) % 2 === 0) {
     if ((numB) % 2 === 0) {
-      if (numC % 2 === 0) {
+      if ((numC) % 2 === 0) {
         kqSC = 3;
         kqSL = 0;
       }
@@ -51,9 +51,11 @@ btnTinhChanLe.onclick = function (event) {
   }
   else { kqSC = 0; kqSL = 3 }
 
-  var showkq = ( kqSC + " số chẳn ") + " và " + (kqSL +" số lẻ");
-  document.getElementById("thongBaoSoChanLe").innerHTML=showkq;
-  document.getElementById("thongBaoSoChanLe").className= "card-footer text-muted alert alert-warning";
+
+  var showkq = (kqSC + " số chẳn ") + " và " + (kqSL + " số lẻ");
+  console.log(showkq);
+  document.getElementById("thongBaoSoChanLe").innerHTML = showkq;
+  document.getElementById("thongBaoSoChanLe").className = "card-footer text-muted alert alert-warning";
 }
 
 
