@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Bài tập 1 -->
+  <div class="container w-25 mt-2">
+    <div class="card">
+      <div class="card-header text-center text-danger">
+        Sắp xếp 3 số theo thứ tự tăng dần
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Nhập số thứ nhất</label>
+            <input type="number" name="" id="soThu1" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập số thứ hai</label>
+            <input type="number" name="" id="soThu2" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập số thứ ba</label>
+            <input type="number" name="" id="soThu3" class="form-control">
+          </div>
+          <button id="btnTinh" type="submit" class="btn btn-success">Tính</button>
+        </form>
+      </div>
+      <div class="card-footer text-muted" id="thongBao">
+        Vui lòng chờ !
+      </div>
+    </div>
+  </div>
+
+  <!-- Bài tập 2-->
+
+  <div class="container w-25 mt-5">
+    <div class="card">
+      <div class="card-header text-danger text-center">
+        Chào hỏi trong gia đình
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Bạn Là Ai?</label>
+            <input type="text" name="" id="userName" class="form-control">
+          </div>
+          <button id="btnChao" class="btn btn-success" type="submit">Xác nhận</button>
+        </form>
+      </div>
+      <div class="card-footer text-muted bg-warning" id="LoiChao">
+        Hi! Mọi người.
+      </div>
+    </div>
+  </div>
+
+  <!-- bài tập 3 -->
+
+  <div class="container w-25 bg-info p-2 mt-5">
+    <div class="card">
+      <div class="card-header text-center text-danger">
+        Chương trình tìm số chẳn và số lẻ
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Nhập số thứ nhất</label>
+            <input type="text" name="" id="soThu1" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập số thứ hai</label>
+            <input type="text" name="" id="soThu2" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập số thứ ba</label>
+            <input type="text" name="" id="soThu3" class="form-control">
+          </div>
+          <button id="tinhSoChanLe" class="btn btn-success" type="submit">Tính</button>
+        </form>
+      </div>
+      <div id="thongBaoSoChanLe" class="card-footer text-muted">
+        Kết quả là:
+      </div>
+    </div>
+  </div>
+
+  <!-- baitap4 -->
+  <div class="container w-25 mt-5">
+    <div class="card">
+      <div class="card-header text-center text-danger">
+        Nhập 3 cạnh, biết tên tam giác?
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Nhập cạnh thứ nhất</label>
+            <input type="text" name="" id="canh1" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập cạnh thứ hai</label>
+            <input type="text" name="" id="canh2" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập cạnh thứ ba</label>
+            <input type="text" name="" id="canh3" class="form-control">
+          </div>
+          <button id="btnTimTamGiac" class="btn btn-success" type="submit">Tính</button>
+        </form>
+      </div>
+      <div class="card-footer text-muted" id="thongBaoTamGiac">
+        Đáp án là:
+      </div>
+    </div>
+  </div>
+
+  <!-- nâng cao 1 -->
+  <div class="container w-25 mt-5">
+    <div class="card">
+      <div class="card-header text-danger">
+        Tìm ngày tháng năm trước và sau ngày nhập
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Nhập ngày</label>
+            <input type="text" name="" id="ngay" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập tháng</label>
+            <input type="text" name="" id="thang" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập năm</label>
+            <input type="text" name="" id="nam" class="form-control">
+          </div>
+          <button id="btnTimKiem" class="btn btn-warning" type="submit">Tìm kiếm</button>
+        </form>
+      </div>
+      <div id="thongBaoTK" class="card-footer text-muted">
+        <div id="thongBaoTK1"></div>
+        <div id="thongBaoTK2"></div>
+        <div id="thongBaoTK3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nang cao 2 -->
+  <div class="container w-25 mt-5">
+    <div class="card">
+      <div class="card-header text-danger">
+        Chương trình tính tổng số ngày trong tháng
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Nhập tháng</label>
+            <input type="text" name="" id="soThang" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Nhập năm</label>
+            <input type="text" name="" id="soNam" class="form-control">
+          </div>
+          <button id="btnDem" class="btn btn-success" type="submit">Đếm</button>
+          <button id="btnClear" class="btn btn-info" type="reset"> Xóa điều kiện</button>
+        </form>
+      </div>
+      <div id="thongBaoTongNgay" class="card-footer text-muted">
+        Vui lòng xóa điều kiện nhập trước thực hiện tiếp theo!
+      </div>
+    </div>
+  </div>
+  <!-- nangcao3 -->
+  <div class="container w-25 mt-5">
+    <div class="card">
+      <div class="card-header text-danger text-center">
+        Dạy đọc 3 chữ số
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Nhập 3 số</label>
+            <input type="text" name="" id="nhapSN" class="form-control">
+          </div>
+          <button class="btn btn-success" type="submit" onclick="btnRead(event)">Đọc</button>
+        </form>
+      </div>
+      <div id="cachDoc" class="card-footer text-muted">
+        Vui lòng đợi!
+      </div>
+    </div>
+  </div>
+
+  <!-- nangcao4 -->
+  <div class="container w-25 mt-5">
+    <div class="card">
+      <div class="card-header">
+        Tính khoảng cách xa trường bằng tọa độ
+      </div>
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Sinh viên 1</label>
+            <input type="text" id="x1" class="form-control">
+            <input type="text" id="y1" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Sinh vien 2</label>
+            <input type="text" id="x2" class="form-control">
+            <input type="text" id="y2" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Sinh viên 3</label>
+            <input type="text" id="x3" class="form-control">
+            <input type="text" id="y3" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Tọa độ Trường</label>
+            <input type="text" id="truonga" class="form-control">
+            <input type="text" id="truongb" class="form-control">
+          </div>
+
+          <button class="btn btn-success" type="submit" onclick="btnTimKhoangCach(event)">Tính</button>
+          <button class="btn btn-warning" type="reset">Vui lòng reset trước tính</button>
+        </form>
+      </div>
+      <div id="thongBaoSinhVienXaNhat" class="card-footer text-muted">
+        Thông báo sinh viên có thể đi muộn là:
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./baitap1.js"></script>
+  <script src="./baitap2.js"></script>
+  <script src="./baitap3.js"></script>
+  <script src="./baitap4.js"></script>
+  <script src="./nangcao1.js"></script>
+  <script src="./nangcao2.js"></script>
+  <script src="./nangcao3.js"></script>
+  <script src="./nangcao4.js"></script>
+</body>
+
+</html>
